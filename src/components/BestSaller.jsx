@@ -10,7 +10,7 @@ const BestSeller = () => {
   useEffect(() => {
     if (products.length > 0) {
       const bestProduct = products.filter((item) => item.bestseller);
-      setBestSellers(bestProduct.slice(0, 5)); // Limiting to top 5 sellers
+      setBestSellers(bestProduct.slice(0, 4));
     }
   }, [products]);
 
