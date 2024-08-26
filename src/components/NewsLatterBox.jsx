@@ -3,6 +3,7 @@ import React from "react";
 const NewsLatterBox = () => {
   const onSubmitHandler = (event) => {
     event.preventDefault();
+    alert("Thank you for subscribing!");
   };
 
   return (
