@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState, useRef } from "react";
 import { ShopContext } from "../context/ShopContext";
 import Title from "./Title";
 import ProductItems from "./ProductItems";
@@ -27,7 +27,7 @@ const BestSeller = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 gap-y-6">
         {bestSellers.map((item, index) => (
           <ProductItems
-            key={item._id} // Using `_id` as a unique key instead of index
+            key={item._id}
             id={item._id}
             name={item.name}
             image={item.image}
